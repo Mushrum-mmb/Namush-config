@@ -21,6 +21,6 @@
 include:
   - board: nice_nano_v2
     shield: chalice
-    cmake-args: -DKEYMAP_FILE=../../config/Nalice.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"Nalice\" -DEXTRA_CONF_FILE=../../config/Nalice.conf
+    cmake-args: -DKEYMAP_FILE=config/Nalice.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"Nalice\" -DEXTRA_CONF_FILE=config/Nalice.conf
     artifact-name: Nalice
 
