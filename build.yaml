@@ -20,18 +20,5 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: two_percent_milk
-include:
-  - board: nice_nano_v2
     shield: chalice
-include:
-  - board: nice_nano_v2
-    shield: chalice
-include:
-  - board: nice_nano_v2
-    shield: chalice
-include:
-  - board: bt65_v1
-include:
-  - board: nice_nano_v2
-    shield: chalice
+
