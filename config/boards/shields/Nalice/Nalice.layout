@@ -15,10 +15,27 @@
             = <&gpioX Y GPIO_ACTIVE_HIGH>
             , <&gpioX Y GPIO_ACTIVE_HIGH>
             , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
+            , <&gpioX Y GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
             = <&gpioX Y (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpioX Y (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpioX Y (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpioX Y (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpioX Y (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
@@ -26,15 +43,19 @@
 
     default_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
-        columns = <3>;
-        rows = <3>;
+        columns = <18>;
+        rows = <5>;
         map = <
-        //   Key 1 | Key 2 | Key 3
+        //   ESC   |   `   |   1   |    |   `   |   1
             RC(0,0) RC(0,1) RC(0,2)
         //   Key 4 | Key 5 | Key 6
             RC(1,0) RC(1,1) RC(1,2)
         //   Key 7 | Key 8 | Key 9
             RC(2,0) RC(2,1) RC(2,2)
+        //   Key 1 | Key 2 | Key 3
+            RC(3,0) RC(3,1) RC(3,2)
+        //   Key 4 | Key 5 | Key 6
+            RC(4,0) RC(4,1) RC(4,2)
         >;
     };
 };
