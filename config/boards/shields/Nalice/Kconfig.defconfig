@@ -1,0 +1,6 @@
+if SHIELD_NALICE
+
+config ZMK_KEYBOARD_NAME
+  default "Nalice"
+
+endif
